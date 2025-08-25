@@ -6,7 +6,7 @@ const connectMongoDb = require("./connection");
 //LOCALHOST URL : "mongodb://localhost:27017/RGUKT_Hospital";
 // ATLAS URl : "mongodb+srv://nithinambati2:yLbT7wHeE14Surh1@cluster0.9qpuxmc.mongodb.net/RGUKT_Hospital?retryWrites=true&w=majority";
 
-const MONGO_URI = "mongodb+srv://nithinambati2:yLbT7wHeE14Surh1@cluster0.9qpuxmc.mongodb.net/RGUKT_Hospital?retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://D123:<db_password>@cluster0.0llgps0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 connectMongoDb(MONGO_URI);
 
