@@ -1,0 +1,23 @@
+
+put http://localhost:8000/nursing/6696940de73eb2182db99233
+Content-Type: application/json
+
+{
+  "ecg": "adf",
+  "spo2": "Nithin"
+}
+
+
+###
+
+
+put http://localhost:8000/treatments/doctor-update/6696940de73eb2182db99233
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJEMTkxMTEyIiwiaWF0IjoxNzIxMjM2MjAxfQ.1ZiqYuWeJ2m-trP5ZDgjOXICXV0_ec12RQG9m8NFtkI
+
+{
+      "labTest": "adfadf",
+      "drugallergy": "asfd",
+      "advice": "fadf",
+      "medicinesWritten": "sndfsd"
+}
