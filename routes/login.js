@@ -9,6 +9,7 @@ router.post("/", async (req, res) => {
   const { userId, password } = req.body;
   try {
     let user, role;
+
     if (userId.startsWith("D")) {
       user = await Doctor.findOne({ userId });
       role = "doctor";
@@ -22,12 +23,12 @@ router.post("/", async (req, res) => {
       user = await Nurse.findOne({ userId });
       role = "nurse";
     } else {
-      res.status(400).json({ message: "Invalid user type" });
+      res.status(400).json({ message: "Invalid user type " });
       return;
     }
 
     if (!user) {
-      res.status(400).json({ message: "Login Failure" });
+      res.status(400).json({ message: "Login Failure" + userId });
       return;
     }
 
