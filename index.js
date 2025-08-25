@@ -13,11 +13,11 @@ connectMongoDb(MONGO_URI);
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3000', // frontend origin
+  origin: 'https://rgukt-hospital-frontend.vercel.app', // frontend origin
   methods: ['GET','POST','PUT','DELETE','OPTIONS'],
   credentials: true,
 }));
-
+app.options('*', cors());
 
 app.use("/", routes);
 
